@@ -18,6 +18,7 @@ module.exports = {
         'ss-grey-primary': '#7E7E7E',
         'ss-grey-secondary': '#F4F4F4',
         'ss-light-orange-primary': '#FAD6C1',
+        'ss-light-purple-primary': '#E4DFFF',
       },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
@@ -27,6 +28,10 @@ module.exports = {
         'footer-bg': "url('/src/assets/icons/footer-bg.svg')",
         'testimonial-bg': "url('/src/assets/icons/testimonial-bg.svg')",
         'social-bg': "url('/src/assets/icons/social-bg.svg')",
+        'popular-brands-bg': "url('/src/assets/icons/popular-brands-bg.svg')",
+      },
+      boxShadow: {
+        'ss-shadow': '5px 13px 18px -5px rgba(127.50, 127.50, 127.50, 0.10)',
       }
     },
   },
