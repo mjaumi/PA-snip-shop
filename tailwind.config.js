@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'ss-blue-primary': '#1E66FF',
         'ss-blue-secondary': '#0E4B80',
+        'ss-blue-accent': '#232347',
         'ss-sky-blue-primary': '#4DC3F7',
         'ss-light-green-primary': '#77E9A6',
         'ss-yellow-primary': '#FFC221',
@@ -15,6 +16,9 @@ module.exports = {
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
       },
+      backgroundImage: {
+        'footer-bg': "url('/src/assets/icons/footer-bg.svg')",
+      }
     },
   },
   plugins: [],
