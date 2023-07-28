@@ -10,19 +10,23 @@ module.exports = {
         'ss-blue-secondary': '#0E4B80',
         'ss-blue-accent': '#232347',
         'ss-light-blue-primary': '#CEF0FF',
+        'ss-light-blue-secondary': '#F4FCFF',
         'ss-dark-blue-primary': '#001439',
         'ss-sky-blue-primary': '#4DC3F7',
         'ss-light-green-primary': '#77E9A6',
         'ss-yellow-primary': '#FFC221',
         'ss-grey-primary': '#7E7E7E',
         'ss-grey-secondary': '#F4F4F4',
+        'ss-light-orange-primary': '#FAD6C1',
       },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
+        'spectral': ["'Spectral'", 'serif'],
       },
       backgroundImage: {
         'footer-bg': "url('/src/assets/icons/footer-bg.svg')",
         'testimonial-bg': "url('/src/assets/icons/testimonial-bg.svg')",
+        'social-bg': "url('/src/assets/icons/social-bg.svg')",
       }
     },
   },
