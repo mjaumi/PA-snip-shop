@@ -93,7 +93,7 @@ const Header = () => {
                             <h5 className='font-semibold mb-3'>Categories</h5>
                             {
                                 categories.map((category, index) =>
-                                    <p className='mt-2 text-sm font-light' key={index}>{category}</p>
+                                    <p className='mt-2 text-sm font-light capitalize' key={index}>{category}</p>
                                 )
                             }
                         </div>
