@@ -1,0 +1,26 @@
+/*-------------------------------------------------
+    Banner Slide Swiper.js Customization here
+-------------------------------------------------*/
+
+.banner-slide .swiper-wrapper {
+  height: 100%;
+}
+
+.banner-slide .swiper-pagination {
+  width: fit-content;
+  display: none;
+  bottom: 200px;
+  left: 60%;
+}
+
+@media (min-width: 1280px) {
+  .banner-slide .swiper-pagination {
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .banner-slide .swiper-pagination {
+    left: 61%;
+  }
+}

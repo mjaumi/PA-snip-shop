@@ -33,7 +33,7 @@ const FooterList = ({ list }) => {
                     title === 'Help' &&
                     <>
                         <div className='flex justify-center xl:justify-start'>
-                            <button className='flex items-center px-3 py-1 mt-7 border-2 border-white rounded-full hover:bg-white hover:text-ss-blue-secondary duration-300 text-sm md:text-base'>
+                            <button className='flex items-center px-3 py-1 mt-7 border-2 border-white rounded-full hover:bg-white hover:text-ss-blue-secondary duration-300 text-sm 2xl:text-base'>
                                 <img className='mr-2' src={icon} alt='SnipShop Icon' />
                                 Download the SnipShop App
                             </button>
