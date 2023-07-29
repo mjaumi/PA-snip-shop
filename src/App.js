@@ -1,4 +1,5 @@
 import './App.css';
+import Banner from './components/Banner/Banner';
 import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className='font-poppins'>
       <Header />
+      <Banner />
       <TrendingProductList />
       <ProductList />
       <FeaturedProducts />

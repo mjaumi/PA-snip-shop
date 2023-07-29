@@ -33,6 +33,8 @@ module.exports = {
         'testimonial-bg': "url('/src/assets/icons/testimonial-bg.svg')",
         'social-bg': "url('/src/assets/icons/social-bg.svg')",
         'popular-brands-bg': "url('/src/assets/icons/popular-brands-bg.svg')",
+        'banner-bg': "url('/src/assets/icons/banner-bg.svg')",
+        'banner-pattern': "url('/src/assets/icons/banner-pattern.svg')",
         'trending-card-bg': 'linear-gradient(234deg, #C0D4FE 0%, #ECF1FD 100%)',
       },
       boxShadow: {
