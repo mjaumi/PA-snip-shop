@@ -6,11 +6,13 @@ import PopularBrands from './components/PopularBrands/PopularBrands';
 import ProductList from './components/ProductList/ProductList';
 import SellOnSocialMedia from './components/SellOnSocialMedia/SellOnSocialMedia';
 import Testimonial from './components/Testimonial/Testimonial';
+import TrendingProductList from './components/TrendingProductsList/TrendingProductList';
 
 function App() {
   return (
     <div className='font-poppins'>
       <Header />
+      <TrendingProductList />
       <ProductList />
       <FeaturedProducts />
       <PopularBrands />
