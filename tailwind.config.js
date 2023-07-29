@@ -18,8 +18,10 @@ module.exports = {
         'ss-grey-primary': '#7E7E7E',
         'ss-grey-secondary': '#F4F4F4',
         'ss-grey-accent': '#F5F5F5',
+        'ss-light-grey-primary': '#F0F0F0',
         'ss-white-primary': '#FFFDFE',
         'ss-light-orange-primary': '#FAD6C1',
+        'ss-light-orange-secondary': '#FF4516',
         'ss-light-purple-primary': '#E4DFFF',
       },
       fontFamily: {

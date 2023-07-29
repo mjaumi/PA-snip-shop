@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import 'swiper/css';
 import './swiperStyles.css';
 import SSArrowButton from '../Shared/SSArrowButton';
@@ -6,28 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SSAngleButtonLeft from '../Shared/SSAngleButtonLeft';
 import SSAngleButtonRight from '../Shared/SSAngleButtonRight';
 import FeatureProductCard from './FeatureProductCard';
+import useCustomSliderNavButton from '../../hooks/useCustomSliderNavButton';
 
 const FeaturedProducts = () => {
-    // integration of react hooks here
-    const sliderRef = useRef();
-
-    // this function is handling the custom slider previous button
-    const prevHandler = () => {
-        if (!sliderRef.current) {
-            return;
-        } else {
-            sliderRef.current.swiper.slidePrev();
-        }
-    }
-
-    // this function is handling the custom slider next button
-    const nextHandler = () => {
-        if (!sliderRef.current) {
-            return;
-        } else {
-            sliderRef.current.swiper.slideNext();
-        }
-    }
+    // integration of custom hooks here
+    const { ref, prevHandler, nextHandler } = useCustomSliderNavButton();
 
     // rendering featured products component here
     return (
@@ -41,7 +24,7 @@ const FeaturedProducts = () => {
             <div className='w-[90%] mx-auto lg:w-full flex justify-center lg:justify-end mt-16'>
                 <div className='relative w-full lg:w-[90%] flex flex-col lg:flex-row justify-center lg:justify-end'>
                     <Swiper
-                        ref={sliderRef}
+                        ref={ref}
                         slidesPerView={1}
                         spaceBetween={40}
                         navigation={true}
