@@ -14,22 +14,22 @@ const PopularBrands = () => {
         <section className='bg-ss-light-blue-secondary'>
             <div className='w-[90%] lg:w-4/5 mx-auto py-20 flex flex-col lg:flex-row'>
                 <div className='relative grid grid-cols-3 gap-5 lg:gap-11 bg-popular-brands-bg bg-no-repeat bg-cover px-5 py-32 rounded-[48px]'>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={apple} alt='apple' />
                     </div>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={bmw} alt='apple' />
                     </div>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={nike} alt='apple' />
                     </div>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={fila} alt='apple' />
                     </div>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={mi} alt='apple' />
                     </div>
-                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto'>
+                    <div className='relative z-10 bg-white rounded-3xl p-4 shadow-ss-shadow mx-auto hover:scale-125 duration-300 cursor-pointer'>
                         <img src={addidas} alt='apple' />
                     </div>
                     <div className='absolute h-3/4 w-3/4 bg-ss-light-purple-primary/50 rounded-[48px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'></div>

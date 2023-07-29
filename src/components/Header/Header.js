@@ -26,31 +26,31 @@ const Header = () => {
                 </div>
                 <div className='bg-white w-1/2 pl-8 h-9 rounded-full hidden lg:flex'>
                     <input className='bg-transparent w-full outline-none' type='text' placeholder='Search SnipShop.com' />
-                    <button className='bg-ss-sky-blue-primary text-white rounded-full h-full px-8 w-fit text-center'>
+                    <button className='bg-ss-sky-blue-primary text-white rounded-full h-full px-8 w-fit text-center hover:pl-12 duration-300'>
                         <BiSearch className='h-5 w-5' />
                     </button>
                 </div>
                 <div className='hidden lg:block'>
                     <ul className='flex text-white text-sm'>
-                        <li>
+                        <li className='hover:opacity-60 duration-300'>
                             <a href='#account' className='flex items-center'>
                                 <BiUser className='mr-2 h-5 w-5' />
                                 Account
                             </a>
                         </li>
-                        <li className='ml-5'>
+                        <li className='ml-5 hover:opacity-60 duration-300'>
                             <a href='#my-items' className='flex items-center'>
                                 <AiOutlineHeart className='mr-2 h-5 w-5' />
                                 My Items
                             </a>
                         </li>
-                        <li className='ml-5'>
+                        <li className='ml-5 hover:opacity-60 duration-300'>
                             <a href='#cart' className='relative flex items-center'>
                                 <BsHandbag className='mr-2 h-5 w-5' />
                                 <span className='absolute bg-ss-yellow-primary rounded-full h-4 w-4 text-xs text-black text-center -top-1 -right-1'>1</span>
                             </a>
                         </li>
-                        <li className='ml-6'>
+                        <li className='ml-6 hover:opacity-60 duration-300'>
                             <a href='#menu' className='flex items-center'>
                                 <GiHamburgerMenu className='mr-2 h-5 w-5' />
                             </a>

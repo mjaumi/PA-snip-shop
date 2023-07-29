@@ -18,7 +18,7 @@ const FeatureProductCard = ({ product }) => {
                 </div>
             </div>
             <div className='flex justify-center mt-12'>
-                <button className='py-3 px-11 rounded-full text-lg font-semibold bg-ss-dark-blue-primary text-white uppercase'>order now</button>
+                <button className='py-3 px-11 rounded-full text-lg font-semibold bg-ss-dark-blue-primary text-white uppercase border-2 border-ss-dark-blue-primary hover:bg-transparent hover:text-ss-dark-blue-primary duration-300'>order now</button>
             </div>
         </div>
     );
