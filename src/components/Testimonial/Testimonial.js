@@ -8,7 +8,7 @@ const Testimonial = () => {
 
     // rendering testimonial section here
     return (
-        <section className='font-poppins py-28 flex flex-col md:flex-row'>
+        <section className='py-28 flex flex-col md:flex-row'>
             <div className='bg-ss-light-blue-primary flex justify-end w-full md:w-3/5 py-8 pr-7 pl-7 md:pl-0 md:rounded-tr-3xl md:rounded-br-3xl'>
                 <img className='bg-testimonial-bg bg-no-repeat bg-cover border rounded-3xl' src={person} alt='User' />
             </div>

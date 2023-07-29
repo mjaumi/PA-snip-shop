@@ -89,7 +89,7 @@ const Footer = () => {
 
     // rendering the footer component here
     return (
-        <footer className='bg-footer-bg bg-center bg-no-repeat bg-cover font-poppins bg-ss-blue-secondary text-white'>
+        <footer className='bg-footer-bg bg-center bg-no-repeat bg-cover bg-ss-blue-secondary text-white'>
             <div className='w-[90%] lg:w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-4 pt-16 text-center lg:text-left text-sm lg:text-base'>
                 <FooterList list={shopList} />
                 <FooterList list={sellList} />

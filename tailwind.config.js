@@ -27,6 +27,7 @@ module.exports = {
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
         'spectral': ["'Spectral'", 'serif'],
+        'roboto': ["'Roboto'", 'sans-serif'],
       },
       backgroundImage: {
         'footer-bg': "url('/src/assets/icons/footer-bg.svg')",

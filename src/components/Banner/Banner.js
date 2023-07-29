@@ -28,7 +28,7 @@ const Banner = () => {
                 <div className='absolute w-4/5 left-1/2 -translate-x-1/2 hidden lg:grid grid-cols-8 2xl:grid-cols-10 gap-y-3 pt-3 z-10'>
                     {
                         categories.map((category, index) =>
-                            <p className='text-sm text-center cursor-pointer hover:opacity-60 duration-300 capitalize' key={index}>{category}</p>
+                            <p className='font-roboto text-sm text-center cursor-pointer hover:opacity-60 duration-300 capitalize' key={index}>{category}</p>
                         )
                     }
                 </div>
