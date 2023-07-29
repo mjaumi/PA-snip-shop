@@ -62,8 +62,8 @@ const Banner = () => {
                         <BannerSlide />
                     </SwiperSlide>
                 </Swiper>
-                <button onClick={prevHandler} className='absolute text-[#1D65FF] bottom-[200px] left-[56%] z-10 hidden xl:block'>PREV</button>
-                <button onClick={nextHandler} className='absolute text-[#1D65FF] bottom-[200px] left-[75%] z-10 hidden xl:block'>NEXT</button>
+                <button onClick={prevHandler} className='absolute text-[#1D65FF] bottom-[200px] left-[56%] z-10 hidden xl:block hover:opacity-60 duration-300'>PREV</button>
+                <button onClick={nextHandler} className='absolute text-[#1D65FF] bottom-[200px] left-[75%] z-10 hidden xl:block hover:opacity-60 duration-300'>NEXT</button>
             </div>
         </section>
     );

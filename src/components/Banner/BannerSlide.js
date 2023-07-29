@@ -14,7 +14,7 @@ const BannerSlide = () => {
                 <h1 className='font-spectral text-4xl md:text-7xl font-extrabold mt-5'>Where the world <br /> comes to shop.</h1>
                 <p className='md:text-lg mt-7'>Life is hard enough already. Let us make it a little <br /> easier, Vision of Snipshop for a better outlook.</p>
                 <div className='mt-16 flex justify-between'>
-                    <button className='text-white text-xs font-semibold uppercase bg-[#2B2B2B] py-3 px-10 rounded-full'>shop now</button>
+                    <button className='text-white text-xs font-semibold uppercase bg-[#2B2B2B] py-3 px-10 rounded-full border-2 border-[#2B2B2B] hover:bg-transparent hover:text-[#2B2B2B] duration-300'>shop now</button>
                     <div>
                         <p className='text-[#262626]'>Start from</p>
                         <h2 className='text-3xl font-semibold text-[#2A2A2A]'>110.00$</h2>
