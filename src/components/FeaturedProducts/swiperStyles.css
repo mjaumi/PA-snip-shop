@@ -1,0 +1,11 @@
+.ssSwiper {
+  width: 70%;
+  margin: 0;
+  margin-right: 15px;
+}
+
+@media (max-width: 912px) {
+  .ssSwiper {
+    width: 100%;
+  }
+}

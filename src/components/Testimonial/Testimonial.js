@@ -1,7 +1,8 @@
 import React from 'react';
-import { TfiAngleLeft, TfiAngleRight } from 'react-icons/tfi';
 import person from '../../assets/images/test-person.png';
 import personIcon from '../../assets/icons/person-icon.png';
+import SSAngleButtonLeft from '../Shared/SSAngleButtonLeft';
+import SSAngleButtonRight from '../Shared/SSAngleButtonRight';
 
 const Testimonial = () => {
 
@@ -26,12 +27,8 @@ const Testimonial = () => {
                         </p>
                     </div>
                     <div className='mt-11 flex justify-center md:justify-start'>
-                        <button className='h-9 w-9 rounded-full bg-ss-dark-blue-primary text-white flex justify-center items-center hover:scale-125 duration-300'>
-                            <TfiAngleLeft className='h-5 w-5' />
-                        </button>
-                        <button className='h-9 w-9 ml-5 rounded-full bg-ss-grey-secondary text-white flex justify-center items-center hover:scale-125 duration-300'>
-                            <TfiAngleRight className='h-5 w-5 text-ss-dark-blue-primary' />
-                        </button>
+                        <SSAngleButtonLeft />
+                        <SSAngleButtonRight />
                     </div>
                 </div>
             </div>

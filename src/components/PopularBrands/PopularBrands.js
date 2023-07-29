@@ -1,11 +1,11 @@
 import React from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import apple from '../../assets/icons/Apple_Inc.-Logo.wine 1.png';
 import bmw from '../../assets/icons/BMW-Logo.wine 1.png';
 import nike from '../../assets/icons/Nike,_Inc.-Logo.wine 1.png';
 import fila from '../../assets/icons/Fila_(company)-Logo.wine 1.png';
 import mi from '../../assets/icons/Xiaomi-Logo.wine 1.png';
 import addidas from '../../assets/icons/Adidas-Logo.wine 1.png';
+import SSArrowButton from '../Shared/SSArrowButton';
 
 const PopularBrands = () => {
 
@@ -42,10 +42,7 @@ const PopularBrands = () => {
                         make it a little easier.
                     </span>
                     <div className='flex justify-center lg:justify-start'>
-                        <button className='group flex items-center mt-16 font-medium w-fit'>
-                            See All
-                            <AiOutlineArrowRight className='ml-2 group-hover:ml-5 duration-300' />
-                        </button>
+                        <SSArrowButton buttonLabel={'see all'} additionalClassName={'mt-16'} />
                     </div>
                 </div>
             </div>

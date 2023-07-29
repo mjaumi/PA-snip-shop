@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import person from '../../assets/images/social-person.png';
 import sunglass from '../../assets/images/sunglass.png';
 import watch from '../../assets/images/watch.png';
@@ -7,6 +6,7 @@ import shoe from '../../assets/images/shoe.png';
 import facebook from '../../assets/icons/fb-logo.svg';
 import instagram from '../../assets/icons/ig-logo.svg';
 import twitter from '../../assets/icons/twitter-logo.svg';
+import SSArrowButton from '../Shared/SSArrowButton';
 
 const SellOnSocialMedia = () => {
 
@@ -22,10 +22,7 @@ const SellOnSocialMedia = () => {
                         make it a little easier.
                     </span>
                     <div className='flex justify-center lg:justify-start'>
-                        <button className='group flex items-center mt-16 font-medium w-fit'>
-                            See All
-                            <AiOutlineArrowRight className='ml-2 group-hover:ml-5 duration-300' />
-                        </button>
+                        <SSArrowButton buttonLabel={'see all'} additionalClassName={'mt-16'} />
                     </div>
                 </div>
                 <div className='bg-social-bg bg-no-repeat bg-cover w-full lg:w-3/5 2xl:w-2/5 rounded-[48px] flex justify-center items-center p-5 lg:p-20'>

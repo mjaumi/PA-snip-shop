@@ -17,6 +17,8 @@ module.exports = {
         'ss-yellow-primary': '#FFC221',
         'ss-grey-primary': '#7E7E7E',
         'ss-grey-secondary': '#F4F4F4',
+        'ss-grey-accent': '#F5F5F5',
+        'ss-white-primary': '#FFFDFE',
         'ss-light-orange-primary': '#FAD6C1',
         'ss-light-purple-primary': '#E4DFFF',
       },
@@ -32,6 +34,7 @@ module.exports = {
       },
       boxShadow: {
         'ss-shadow': '5px 13px 18px -5px rgba(127.50, 127.50, 127.50, 0.10)',
+        'ss-featured-card-shadow': '0px 8px 18px -7px rgba(0, 0, 0, 0.10)',
       }
     },
   },
