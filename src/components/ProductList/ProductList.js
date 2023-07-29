@@ -38,8 +38,8 @@ const ProductList = () => {
                     <p className='text-lg mt-6'>Life is hard enough already. Let us <br /> make it a little easier.</p>
                 </div>
                 <div className='flex mt-8 md:mt-0'>
-                    <SSAngleButtonLeft clickHandler={prevHandler} />
-                    <SSAngleButtonRight clickHandler={nextHandler} />
+                    <SSAngleButtonLeft clickHandler={prevHandler} additionalClassName={'h-7 w-7'} />
+                    <SSAngleButtonRight clickHandler={nextHandler} additionalClassName={'h-7 w-7'} />
                 </div>
             </div>
             <div className='mt-16 md:px-10'>

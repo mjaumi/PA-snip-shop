@@ -39,7 +39,7 @@ const BannerSlide = () => {
                         <span className='block text-[8px] font-semibold text-center mt-4'>Camera <br /> Stand</span>
                     </div>
                     <div className='mt-0 xl:mt-5 md:ml-7 xl:ml-0 flex flex-col xl:flex-row justify-center'>
-                        <SSAngleButtonLeft additionalClassName={'rotate-180 xl:-rotate-90'} />
+                        <SSAngleButtonLeft additionalClassName={'h-9 w-9 rotate-180 xl:-rotate-90'} />
                     </div>
                 </div>
             </div>

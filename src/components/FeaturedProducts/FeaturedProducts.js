@@ -65,8 +65,8 @@ const FeaturedProducts = () => {
                         }
                     </Swiper>
                     <div className='static mt-10 lg:mt-0 lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 flex justify-center lg:justify-start'>
-                        <SSAngleButtonLeft clickHandler={prevHandler} />
-                        <SSAngleButtonRight clickHandler={nextHandler} />
+                        <SSAngleButtonLeft clickHandler={prevHandler} additionalClassName={'h-9 w-9'} />
+                        <SSAngleButtonRight clickHandler={nextHandler} additionalClassName={'h-9 w-9'} />
                     </div>
                 </div>
             </div>

@@ -58,9 +58,9 @@ const TrendingProductList = () => {
                     <p className='text-xs font-medium ml-5 cursor-pointer hover:opacity-70 duration-300'>Interiors</p>
                     <p className='text-xs font-medium ml-5 cursor-pointer hover:opacity-70 duration-300'>Food & Drink</p>
                 </div>
-                <div className='mt-10 flex justify-center md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2'>
-                    <SSAngleButtonLeft clickHandler={prevHandler} />
-                    <SSAngleButtonRight clickHandler={nextHandler} />
+                <div className='mt-10 md:mt-0 flex justify-center md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2'>
+                    <SSAngleButtonLeft clickHandler={prevHandler} additionalClassName={'h-7 w-7'} />
+                    <SSAngleButtonRight clickHandler={nextHandler} additionalClassName={'h-7 w-7'} />
                 </div>
             </div>
             <div className='mt-28 w-[90%] md:ml-auto'>

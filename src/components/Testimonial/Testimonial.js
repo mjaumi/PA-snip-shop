@@ -27,8 +27,8 @@ const Testimonial = () => {
                         </p>
                     </div>
                     <div className='mt-11 flex justify-center md:justify-start'>
-                        <SSAngleButtonLeft />
-                        <SSAngleButtonRight />
+                        <SSAngleButtonLeft additionalClassName={'h-9 w-9'} />
+                        <SSAngleButtonRight additionalClassName={'h-9 w-9'} />
                     </div>
                 </div>
             </div>
