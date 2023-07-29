@@ -1,14 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SSAngleButtonLeft from '../Shared/SSAngleButtonLeft';
 import SSAngleButtonRight from '../Shared/SSAngleButtonRight';
 import ProductListCard from './ProductListCard';
 import useCustomSliderNavButton from '../../hooks/useCustomSliderNavButton';
+import axios from '../../utils/axios';
 
 const ProductList = () => {
     // integration of custom hooks here
     const { ref, prevHandler, nextHandler } = useCustomSliderNavButton();
+
+    // integration of react hooks here
+    const [products, setProducts] = useState([]);
+    let productsChunk = [];
+
+    useEffect(() => {
+        axios.get('/products')
+            .then(res => setProducts(res.data.products));
+    }, []);
+
+    if (products.length) {
+        for (let i = 0; i < products.length; i += 9) {
+            productsChunk.push(products.slice(i, i + 9));
+        }
+
+        console.log(productsChunk);
+    }
 
     // rendering the product list component here
     return (
@@ -29,32 +47,21 @@ const ProductList = () => {
                     slidesPerView={1}
                     className='mySwiper'
                 >
-                    <SwiperSlide>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14'>
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14'>
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                            <ProductListCard />
-                        </div>
-                    </SwiperSlide>
+                    {
+                        productsChunk.map((prodArr, index) =>
+                            <SwiperSlide key={index}>
+                                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14'>
+                                    {
+                                        prodArr.map(product =>
+                                            <ProductListCard
+                                                key={product.id}
+                                                product={product}
+                                            />
+                                        )
+                                    }
+                                </div>
+                            </SwiperSlide>)
+                    }
                 </Swiper>
             </div>
         </section>

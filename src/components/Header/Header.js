@@ -12,7 +12,7 @@ const Header = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        axios.get('/categories')
+        axios.get('/products/categories')
             .then(res => setCategories(res.data));
     }, []);
 
