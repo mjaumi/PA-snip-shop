@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import 'swiper/css';
 import './swiperStyles.css';
 import SSArrowButton from '../Shared/SSArrowButton';
@@ -7,10 +7,20 @@ import SSAngleButtonLeft from '../Shared/SSAngleButtonLeft';
 import SSAngleButtonRight from '../Shared/SSAngleButtonRight';
 import FeatureProductCard from './FeatureProductCard';
 import useCustomSliderNavButton from '../../hooks/useCustomSliderNavButton';
+import axiosInstance from '../../utils/axios';
 
 const FeaturedProducts = () => {
     // integration of custom hooks here
     const { ref, prevHandler, nextHandler } = useCustomSliderNavButton();
+
+    // integration of react hooks here
+    const [products, setProducts] = useState([]);
+
+    // fetching products through API here
+    useEffect(() => {
+        axiosInstance.get('/products')
+            .then(res => setProducts(res.data.products));
+    }, []);
 
     // rendering featured products component here
     return (
@@ -42,23 +52,17 @@ const FeaturedProducts = () => {
                                 spaceBetween: 54,
                             }
                         }}
-                        className='ssSwiper'
+                        className='featured-card-swiper'
                     >
-                        <SwiperSlide className='mySwiper'>
-                            <FeatureProductCard />
-                        </SwiperSlide>
-                        <SwiperSlide className='mySwiper'>
-                            <FeatureProductCard />
-                        </SwiperSlide>
-                        <SwiperSlide className='mySwiper'>
-                            <FeatureProductCard />
-                        </SwiperSlide>
-                        <SwiperSlide className='mySwiper'>
-                            <FeatureProductCard />
-                        </SwiperSlide>
-                        <SwiperSlide className='mySwiper'>
-                            <FeatureProductCard />
-                        </SwiperSlide>
+                        {
+                            products
+                                .filter(product => product.rating >= 4.5)
+                                .map(product =>
+                                    <SwiperSlide key={product.id}>
+                                        <FeatureProductCard product={product} />
+                                    </SwiperSlide>
+                                )
+                        }
                     </Swiper>
                     <div className='static mt-10 lg:mt-0 lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 flex justify-center lg:justify-start'>
                         <SSAngleButtonLeft clickHandler={prevHandler} />

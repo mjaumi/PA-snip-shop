@@ -1,19 +1,20 @@
 import React from 'react';
-import dummyProduct from '../../assets/images/dummy.png';
 
-const FeatureProductCard = () => {
+const FeatureProductCard = ({ product }) => {
+    // destructuring the product here
+    const { title, thumbnail, price } = product || {};
 
     // rendering featured product card component here
     return (
         <div>
-            <div className='-mb-56'>
-                <img className='w-full' src={dummyProduct} alt='dummy' />
+            <div className='-mb-20 rounded-xl overflow-hidden w-[90%] h-[160px] mx-auto'>
+                <img className='w-full' src={thumbnail} alt={title} />
             </div>
-            <div className='shadow-ss-featured-card-shadow rounded-[30px] bg-ss-white-primary border border-ss-grey-accent pt-44'>
+            <div className='shadow-ss-featured-card-shadow rounded-[30px] bg-ss-white-primary border border-ss-grey-accent pt-24'>
                 <div className='py-8 text-center'>
-                    <h2 className='font-semibold text-2xl'>VERSACE</h2>
+                    <h2 className='font-semibold text-2xl'>{title}</h2>
                     <h3 className='font-medium text-lg mt-3'>EROS - W</h3>
-                    <h3 className='font-semibold text-lg mt-8 text-ss-blue-secondary'>$285.00 USD</h3>
+                    <h3 className='font-semibold text-lg mt-8 text-ss-blue-secondary'>${price}.00 USD</h3>
                 </div>
             </div>
             <div className='flex justify-center mt-12'>

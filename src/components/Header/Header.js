@@ -11,6 +11,7 @@ const Header = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
     const [categories, setCategories] = useState([]);
 
+    // fetching categories through API here
     useEffect(() => {
         axios.get('/products/categories')
             .then(res => setCategories(res.data));

@@ -13,19 +13,20 @@ const ProductList = () => {
 
     // integration of react hooks here
     const [products, setProducts] = useState([]);
+
     let productsChunk = [];
 
+    // fetching products through API here
     useEffect(() => {
         axios.get('/products')
             .then(res => setProducts(res.data.products));
     }, []);
 
+    // making chunk of products here
     if (products.length) {
         for (let i = 0; i < products.length; i += 9) {
             productsChunk.push(products.slice(i, i + 9));
         }
-
-        console.log(productsChunk);
     }
 
     // rendering the product list component here

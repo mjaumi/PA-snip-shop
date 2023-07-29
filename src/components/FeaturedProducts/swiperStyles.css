@@ -1,14 +1,14 @@
 /*-------------------------------------------------
     Featured Swiper.js Customization here
 -------------------------------------------------*/
-.ssSwiper {
+.featured-card-swiper {
   width: 70%;
   margin: 0;
   margin-right: 15px;
 }
 
 @media (max-width: 912px) {
-  .ssSwiper {
+  .featured-card-swiper {
     width: 100%;
   }
 }
