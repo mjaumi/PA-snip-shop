@@ -33,10 +33,14 @@ module.exports = {
         'testimonial-bg': "url('/src/assets/icons/testimonial-bg.svg')",
         'social-bg': "url('/src/assets/icons/social-bg.svg')",
         'popular-brands-bg': "url('/src/assets/icons/popular-brands-bg.svg')",
+        'trending-card-bg': 'linear-gradient(234deg, #C0D4FE 0%, #ECF1FD 100%)',
       },
       boxShadow: {
         'ss-shadow': '5px 13px 18px -5px rgba(127.50, 127.50, 127.50, 0.10)',
         'ss-featured-card-shadow': '0px 8px 18px -7px rgba(0, 0, 0, 0.10)',
+      },
+      gridTemplateRows: {
+        'ss-trending': '100px 40px',
       }
     },
   },
