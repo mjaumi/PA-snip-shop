@@ -83,7 +83,7 @@ const TrendingProductList = () => {
                             spaceBetween: 20,
                         }
                     }}
-                    style={{ 'overflow-y': 'visible' }}
+                    style={{ 'overflowY': 'visible' }}
                 >
                     {
                         trendingProducts.map((product, index) =>
