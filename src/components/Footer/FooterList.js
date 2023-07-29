@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsDot, BsDribbble, BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
-import icon from '../../assets/icons/fabIcon.svg';
+import icon from '../../assets/icons/favicon.svg';
 
 const FooterList = ({ list }) => {
     // destructuring the list items here
