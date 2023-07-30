@@ -46,7 +46,6 @@ const ProductList = () => {
                 <Swiper
                     ref={ref}
                     slidesPerView={1}
-                    className='mySwiper'
                 >
                     {
                         productsChunk.map((prodArr, index) =>
