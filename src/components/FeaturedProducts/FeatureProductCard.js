@@ -8,7 +8,7 @@ const FeatureProductCard = ({ product }) => {
     return (
         <div className='block md:grid lg:block grid-rows-ss-featured-card'>
             <div>
-                <div className='-mb-20 rounded-xl overflow-hidden w-[90%] h-[160px] md:h-[100px] lg:h-[160px] mx-auto'>
+                <div className='-mb-20 rounded-xl overflow-hidden w-[90%] h-[160px] md:h-[100px]  xl:h-[125px] 2xl:h-[160px] mx-auto'>
                     <img className='w-full' src={thumbnail} alt={title} />
                 </div>
                 <div className='shadow-ss-featured-card-shadow rounded-[30px] bg-ss-white-primary border border-ss-grey-accent pt-24 h-full'>
