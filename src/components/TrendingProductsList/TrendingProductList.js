@@ -63,7 +63,7 @@ const TrendingProductList = () => {
                     <SSAngleButtonRight clickHandler={nextHandler} additionalClassName={'h-7 w-7'} />
                 </div>
             </div>
-            <div className='mt-28 w-[90%] md:ml-auto'>
+            <div className='mt-28 w-full md:w-[90%] md:ml-auto'>
                 <Swiper
                     ref={ref}
                     slidesPerView={1}
