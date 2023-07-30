@@ -44,6 +44,8 @@ module.exports = {
       },
       gridTemplateRows: {
         'ss-trending': '100px 40px',
+        'ss-featured-card': '320px 100px',
+        'ss-featured-card-text': '1fr 0.5fr',
       }
     },
   },

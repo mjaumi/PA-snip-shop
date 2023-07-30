@@ -7,8 +7,8 @@ const ProductListCard = ({ product }) => {
 
     // rendering the product card component here
     return (
-        <div className='rounded-[36px] border border-ss-grey-secondary p-8'>
-            <div className='rounded-xl overflow-hidden h-[200px]'>
+        <div className='rounded-[36px] border border-ss-grey-secondary p-4 lg:p-8'>
+            <div className='rounded-xl overflow-hidden md:h-[120px] lg:h-[200px]'>
                 <img className='w-full' src={thumbnail} alt={title} />
             </div>
             <h3 className='mt-6 text-lg font-semibold'>{title}</h3>

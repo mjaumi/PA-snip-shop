@@ -31,7 +31,7 @@ const ProductList = () => {
 
     // rendering the product list component here
     return (
-        <section className='w-[90%] md:w-4/5 mx-auto my-24'>
+        <section className='w-[90%] lg:w-4/5 mx-auto my-24'>
             <div className='flex flex-col md:flex-row text-center md:text-left justify-center md:justify-between items-center'>
                 <div>
                     <h1 className='font-spectral text-3xl font-bold'>Shop by Category</h1>
