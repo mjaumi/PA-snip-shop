@@ -9,7 +9,7 @@ const BannerSlide = () => {
     // rendering banner slides here
     return (
         <div className='h-full w-[90%] xl:w-4/5 flex flex-col xl:flex-row justify-between mx-auto text-center xl:text-left'>
-            <div className='w-full xl:w-1/2 lg:pt-44 2xl:pt-32'>
+            <div className='w-full xl:w-1/2 pt-10 lg:pt-44 2xl:pt-32'>
                 <p className='font-spectral text-xs font-medium'>100% QUALITY, 100% SATISFACTION</p>
                 <h1 className='font-spectral text-4xl md:text-7xl font-extrabold mt-5'>Where the world <br /> comes to shop.</h1>
                 <p className='md:text-lg mt-7'>Life is hard enough already. Let us make it a little <br /> easier, Vision of Snipshop for a better outlook.</p>
