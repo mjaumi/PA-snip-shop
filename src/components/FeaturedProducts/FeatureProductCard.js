@@ -14,7 +14,7 @@ const FeatureProductCard = ({ product }) => {
                 <div className='shadow-ss-featured-card-shadow rounded-[30px] bg-ss-white-primary border border-ss-grey-accent pt-24 h-full'>
                     <div className='grid grid-rows-ss-featured-card-text py-8 px-2 text-center h-full'>
                         <div>
-                            <h2 className='font-semibold text-lg lg:text-2xl'>{title.length > 20 ? title.slice(0, 20) + '...' : title}</h2>
+                            <h2 className='font-semibold text-lg lg:text-2xl'>{title.length > 15 ? title.slice(0, 15) + '...' : title}</h2>
                             <h3 className='font-medium text-lg mt-3'>EROS - W</h3>
                         </div>
                         <h3 className='font-semibold text-lg mt-8 text-ss-blue-secondary'>${price}.00 USD</h3>
